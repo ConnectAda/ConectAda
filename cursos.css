@@ -1,0 +1,280 @@
+/* Cabeçario */
+header{
+    position: relative;
+    background: #9600ff;
+    font-weight: 700;
+    font-size: 0;
+    display: flex;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 2%;
+    text-align: center;
+    align-items: center;
+    
+
+}
+.logo_home{
+    width: 70px;
+   
+}
+
+.T1{
+    font-size: 40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffe926;
+    font-weight: 10px;
+    margin-left: 500%;
+}
+
+.T2{
+    font-size: 20px;
+    color:#ffe926;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+}
+
+/*Fundo*/
+body{
+    background-color: #000;
+}
+
+
+
+/* Imagens */
+.educaweb{
+    background: url("img/Cursos/EDUCAWEB.jpeg") ;
+    border-image: fill 0 linear-gradient(#0001,#000000) ;
+    height: 50vh;
+    display:grid;
+    place-items: center;
+    max-width: 60%;
+    margin-left: 20%;
+    text-align: center;
+    margin-top: 1px;
+    
+}
+.coursera{
+    background: url("img/Cursos/COURSERA.png") ;
+    border-image: fill 0 linear-gradient(#0001, #000) ;
+    height: 50vh;
+    display:grid;      
+    place-items: center;
+    max-width: 60%;
+    margin-left: 20%;
+    text-align: center;
+    margin-top: 1px;
+    
+}
+.bradesco{
+    background: url("img/Cursos/BRADESCO.png") ;
+    border-image: fill 0 linear-gradient(#0001, #000) ;
+    height: 50vh;
+    display:grid;      
+    place-items: center;
+    max-width: 60%;
+    margin-left: 20%;
+    text-align: center;
+    margin-top: 1px;
+    
+}
+.edx{
+    background: url("img/Cursos/EDX.png") ;
+    border-image: fill 0 linear-gradient(#0001, #000) ;
+    height: 50vh;
+    display:grid;      
+    place-items: center;
+    max-width: 60%;
+    margin-left: 20%;
+    text-align: center;
+    margin-top: 1px;
+    
+}
+
+.kultivi{
+    background: url("img/Cursos/KULTIVI.png") ;
+    border-image: fill 0 linear-gradient(#0001, #000) ;
+    height: 50vh;
+    display:grid;      
+    place-items: center;
+    max-width: 60%;
+    margin-left: 20%;
+    text-align: center;
+    margin-top: 1px;
+    
+}
+.rock{
+    background: url("img/Cursos/ROCK.png") ;
+    border-image: fill 0 linear-gradient(#0001, #000) ;
+    height: 50vh;
+    display:grid;      
+    place-items: center;
+    max-width: 60%;
+    margin-left: 20%;
+    text-align: center;
+    margin-top: 1px;
+    
+}
+.fgv{
+    background: url("img/Cursos/FGV.png") ;
+    border-image: fill 0 linear-gradient(#0001, #000) ;
+    height: 50vh;
+    display:grid;      
+    place-items: center;
+    max-width: 60%;
+    margin-left: 20%;
+    text-align: center;
+    margin-top: 1px;
+    
+}
+
+/* Links*/
+
+a{
+    text-decoration:none;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+@media (min-width: 600px) and (max-width: 1023px){
+    .T1{
+        font-size: 50px;
+        text-align: center;
+        margin-left: 300px;
+       
+    }
+    .T2{
+        
+        color: #9600ff;
+        text-align: center;
+        
+    }
+
+    a{
+        text-decoration:none;
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+    }
+
+    .educaweb{
+
+        max-width: 100%;
+        margin-left: 0;
+        
+        
+    }
+
+    .coursera{
+
+        max-width: 100%;
+        margin-left: 0;
+        
+    } 
+    
+    .bradesco{
+
+        max-width: 100%;
+        margin-left: 0;
+        
+    } 
+    
+    .edx{
+
+        max-width: 100%;
+        margin-left: 0;
+        
+    } 
+    
+    .kultivi{
+
+        max-width: 100%;
+        margin-left: 0;
+        
+    } 
+    
+    .rock{
+
+        max-width: 100%;
+        margin-left: 0;
+        
+    }
+
+    .fgv{
+
+        max-width: 100%;
+        margin-left: 0;
+        
+    }
+    
+}
+
+@media (max-width:599px){
+    
+    /*Titulos da página*/
+    .T1{
+        font-size: 35px;
+        text-align: center;
+        margin-left: 55%;
+    }
+
+    .T2{
+        
+        color: #9600ff;
+        
+    }
+
+
+
+    /*Cursos*/
+    .educaweb{
+
+        max-width: 100%;
+        margin-left: 0;
+        
+    }
+
+    .coursera{
+
+        max-width: 100%;
+        margin-left: 0;
+        
+    } 
+    
+    .bradesco{
+
+        max-width: 100%;
+        margin-left: 0;
+        
+    } 
+    
+    .edx{
+
+        max-width: 100%;
+        margin-left: 0;
+        
+    } 
+    
+    .kultivi{
+
+        max-width: 100%;
+        margin-left: 0;
+        
+    } 
+    
+    .rock{
+
+        max-width: 100%;
+        margin-left: 0;
+        
+    }
+
+    .fgv{
+
+        max-width: 100%;
+        margin-left: 0;
+        
+    }
+    
+    
+}
+

@@ -1,0 +1,325 @@
+/*CSS*/
+
+body{
+    background: #000000;
+  
+}
+h1{
+    color: #9600ff;
+    text-align: center;
+}
+
+#menu-button {
+    font-size: 60px;
+    cursor: pointer;
+    display: block; 
+   
+}
+
+#menu-button #home{
+    width: 60px;
+}
+
+
+/*OS CARDS*/
+.card{
+    width: 50%;
+    aspect-ratio: 6 / 0.7;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+    display: grid;
+    align-items: center;
+    margin-left: 25%;
+}
+
+.card .image-box{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.card .image-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: inherit;
+    transition: 0.5s ease-in-out;
+}
+
+.card::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 5px solid #9600ff;
+    border-radius: inherit;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+    
+}
+
+.card:hover img{
+    filter: grayscale(1) brightness(0.4);
+}
+
+.card:hover::after{
+    opacity: 1;
+    inset: 20px;
+}
+
+.content{
+    width: 85%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #FFE926;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.card > .content > h2{
+    color: #000000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@media (min-width:1000px){
+    /*CSS*/
+
+body{
+    background: #000000;
+  
+}
+h1{
+    color: #9600ff;
+    text-align: center;
+}
+
+#menu-button {
+    font-size: 60px;
+    cursor: pointer;
+    display: block; 
+   
+}
+
+#menu-button #home{
+    width: 60px;
+}
+
+
+/*OS CARDS*/
+.card{
+    width: 50%;
+    aspect-ratio: 6 / 0.7;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+    display: grid;
+    align-items: center;
+    margin-left: 25%;
+}
+
+.card .image-box{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.card .image-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: inherit;
+    transition: 0.5s ease-in-out;
+}
+
+.card::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 5px solid #9600ff;
+    border-radius: inherit;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+    
+}
+
+.card:hover img{
+    filter: grayscale(1) brightness(0.4);
+}
+
+.card:hover::after{
+    opacity: 1;
+    inset: 20px;
+}
+
+.content{
+    width: 85%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #FFE926;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.card > .content > h2{
+    color: #000000;
+    font-family: 'Trebuchet MS';
+}
+
+}
+
+
+@media (min-width:600px){
+    
+    /*Título principal*/
+     h1{
+        font-size: 40px;
+        margin-top: 2%;
+        color: #9600ff;
+    }
+    
+    #menu-button #home{
+        width: 100px;
+    }
+    
+    .card:hover img{
+        display: none;
+    }
+
+    .card::after{
+       display: none;
+    }
+    
+    /*Cards*/
+    .card{
+        width: 100%;
+        border-radius: 8px;
+        position: relative;
+        display: grid;
+        align-items: center;
+        text-align: center;
+        margin-left: 0;
+        
+     
+    }
+
+    .card .image-box img{
+        width: 90%;
+        height: 700px; 
+        border-radius: inherit;
+        
+       
+    }
+
+    .card::after{
+       display: none;
+    }
+
+    .card:hover img{
+        display: none;
+    }
+    
+    .card:hover::after{
+        display: none;
+    }
+
+    /*Títulos da leis*/
+    .card > .content > h2{
+        font-size: 20px;
+        font-weight: 30px;
+        
+    }
+    
+    /*Conteúdo dos cards */
+    .content{
+        width: 500px;
+        height: auto;
+        top:350px;
+        text-align: justify;
+        color: #000000;
+        font-size: 20px;
+        font-weight: 50px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    }
+
+}
+
+@media (max-width:599px){
+    
+   
+
+    /*Título principal*/
+    h1{
+        font-size: 25px;
+        margin-top: 2%;
+        color: #9600ff;
+    }
+    
+    #menu-button #home{
+        width: 60px;
+    }
+    /*Cards*/
+    .card{
+        width: 100%;
+        aspect-ratio: 6 / 0.7;
+        border-radius: 8px;
+        position: relative;
+        margin-left: 0;
+        display: grid;
+        align-items: center;
+     
+    }
+
+    .card .image-box img{
+        width: 100%;
+        height: 100%;
+        object-position: 50% 50%;
+        border-radius: inherit;
+       
+    }
+
+    .card::after{
+       display: none;
+    }    
+
+    .card::after{
+       display: none;
+    }
+
+    .card:hover img{
+        display: none;
+    }
+    
+    .card:hover::after{
+        display: none;
+    }
+
+    /*Títulos da leis*/
+    .card > .content > h2{
+        font-size: 15px;
+        font-weight: 30px;
+    }
+    
+    /*Conteúdo dos cards */
+    .content{
+        width: 85%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #000000;
+        font-size: 9px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    }
+
+}

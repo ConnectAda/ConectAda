@@ -1,0 +1,551 @@
+/* Navegação*/
+body{
+    
+    background: #000000;
+    color: #ffe926;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    
+}
+
+.cabeçario{
+    display: flex;
+    flex-direction: row;
+    padding: 0 ;
+}
+/*Menu mobile*/
+
+.menu-mobile{
+    position: fixed;
+    background-color: #ffe926;
+    height: 100%;
+    top:0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: 0.5s;;
+}
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+}
+
+.abrir-menu-mobile{
+   
+    width: 100%;
+    flex-direction:row-reverse;
+
+}
+.abrir-menu-mobile h1{
+    text-align: center;
+    top: 0;
+    font-size: 40px;
+    color: #ffe926;
+}
+.abrir-menu-mobile h1 span{
+    color: #9600ff;
+}
+
+.menu-mobile  nav ul{
+    list-style: none;
+    padding: 1%;
+    text-decoration: none;
+    color: #000000;
+    text-align: right;
+       
+
+}
+
+.menu-mobile nav ul li a{
+    color: #000000;
+    font-size: 25px;
+    font-weight: 100;
+    padding: 30px 10% ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    display: block;
+
+}
+.menu-mobile nav ul li a:hover{
+    background-color: #9600ff;
+    padding: 10px;
+    color: #ffffff;
+   
+}
+.menu-mobile .fechar{
+    padding: 20px 5%;
+}
+
+.overlay-menu{
+    background-color: #000000a5;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+    
+}
+
+/*Menu Emulador*/
+.menu{
+    position: relative;
+    background: #9600ff;
+    font-weight: 700;
+    font-size: 0;
+    display: flex;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 5%;
+    font-family:'Courier New', Courier, monospace;
+   
+}
+
+.item > .logo{
+    width: 50px;
+    margin-left: 15px;
+
+    
+}
+
+.dropdown{
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 62px;
+}
+
+.menu .item{
+    font-size: 20px;
+    display: inline-block;
+    position: relative;
+    padding: 0 20px;
+    cursor: pointer;
+    z-index: 5;
+    min-height: 25%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    margin-right: 80px;
+    text-decoration: none;
+    color: #ffe926;
+}
+
+.menu .item span{
+    color: #9600ff;
+}
+
+
+
+.dropdown > div{
+    transform:
+        translate(0, -100%);
+    transition: 0.5s 0.1s;
+    position: relative;
+}
+
+.dropdown a{
+    display: block;
+    padding: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: #ffe926;
+    
+}
+
+.dropdown a:hover{
+    background: #ffe926;
+}
+
+.underline{
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    height: 6px;
+    width: 10%;
+    background: #ffe926;
+    transition: 0.40s;
+   
+}
+
+.menu .item:hover > .dropdown > div{
+    translate: 120%;
+}
+
+.menu .item:nth-child(1):hover ~ .underline{
+    translate: 0;
+}
+
+.menu .item:nth-child(2):hover ~ .underline{
+    translate: 100% 0;
+}
+
+.menu .item:nth-child(3):hover ~ .underline{
+    translate: 230% 0;
+}
+
+.menu .item:nth-child(4):hover ~ .underline{
+    translate: 395% 0;
+}
+
+.menu .item:nth-child(5):hover ~ .underline{
+    translate: 540% 0;
+}
+
+.menu .item:nth-child(6):hover ~ .underline{
+    translate: 695% 0;
+}
+
+.menu .item:nth-child(7):hover ~ .underline{
+    translate: 845% 0;
+}
+
+/* Conteúdo */
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+
+}
+.Ada{
+    width: 250px;
+    height: 300px;
+    margin-left: 40px;
+    margin-top: 2px;
+    
+}
+
+.text{
+    background: #9600ff;
+    border-radius: 30px;
+    display: flex;
+    margin-top: 5px;
+    flex-direction: column;
+    width: 1000px;
+    text-align: center;
+    padding: 20px 5%;
+    margin-right: 40px;
+    align-items: center;
+    box-shadow: 
+    0 0px 50px
+   #ffe926;
+}
+
+
+h1{
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+    position: relative;
+   
+}
+span{
+    color: #ffe926;
+}
+
+p{
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    position: inherit;
+}
+
+/*Tamanho da tela para ajuste*/
+
+/*Estilos para tablets*/
+
+@media (min-width: 600px) and (max-width: 1023px){
+
+    
+    /*CABEÇALHO*/
+    .menu{
+        display: none;
+    }
+
+    /*Quadrado*/
+    .Ada{
+        max-width: 200px;
+        height: 200px;
+        margin-right: 15px;
+    }
+    .text{
+        width: 600px ;
+        height:auto; 
+        margin-top: 15%;
+        margin-left: 50px;
+        padding: 20px 5%;
+    }
+    h1{
+        font-size: 1000px;
+    }
+
+}
+
+/*Estilos para notebooks*/
+
+@media (min-width: 1023px){
+    /* Navegação*/
+body{
+    
+    background: #000000;
+    color: #ffe926;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    
+}
+
+.cabeçario{
+    display: flex;
+    flex-direction: row;
+    padding: 0 ;
+}
+/*Menu mobile*/
+
+.menu-mobile{
+    display: none;    
+}
+.menu-mobile.abrir-menu{
+    display: none; 
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: none; 
+}
+
+.abrir-menu-mobile{
+    display: none; 
+}
+.abrir-menu-mobile h1{
+    display: none; 
+}
+.abrir-menu-mobile h1 span{
+    display: none; 
+}
+
+.menu-mobile  nav ul{
+    display: none; 
+
+}
+
+.menu-mobile nav ul li a{
+    display: none; 
+
+}
+.menu-mobile nav ul li a:hover{
+    display: none; 
+}
+.menu-mobile .fechar{
+    display: none; }
+
+.overlay-menu{
+    display: none; 
+}
+
+
+/*Menu Emulador*/
+.menu{
+    position: relative;
+    background: #9600ff;
+    font-weight: 700;
+    font-size: 0;
+    display: flex;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 5%;
+    font-family:'Courier New', Courier, monospace;
+   
+}
+
+.item > .logo{
+    width: 50px;
+    margin-left: 15px;
+
+    
+}
+
+.dropdown{
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 62px;
+}
+
+.menu .item{
+    font-size: 20px;
+    display: inline-block;
+    position: relative;
+    padding: 0 20px;
+    cursor: pointer;
+    z-index: 5;
+    min-height: 25%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    margin-right: 80px;
+    text-decoration: none;
+    color: #ffe926;
+}
+
+.menu .item span{
+    color: #9600ff;
+}
+
+
+
+.dropdown > div{
+    transform:
+        translate(0, -100%);
+    transition: 0.5s 0.1s;
+    position: relative;
+}
+
+.dropdown a{
+    display: block;
+    padding: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: #ffe926;
+    
+}
+
+.dropdown a:hover{
+    background: #ffe926;
+}
+
+.underline{
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    height: 6px;
+    width: 10%;
+    background: #ffe926;
+    transition: 0.40s;
+   
+}
+
+.menu .item:hover > .dropdown > div{
+    translate: 120%;
+}
+
+.menu .item:nth-child(1):hover ~ .underline{
+    translate: 0;
+}
+
+.menu .item:nth-child(2):hover ~ .underline{
+    translate: 100% 0;
+}
+
+.menu .item:nth-child(3):hover ~ .underline{
+    translate: 230% 0;
+}
+
+.menu .item:nth-child(4):hover ~ .underline{
+    translate: 395% 0;
+}
+
+.menu .item:nth-child(5):hover ~ .underline{
+    translate: 540% 0;
+}
+
+.menu .item:nth-child(6):hover ~ .underline{
+    translate: 695% 0;
+}
+
+.menu .item:nth-child(7):hover ~ .underline{
+    translate: 845% 0;
+}
+
+/* Conteúdo */
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+
+}
+.Ada{
+    width: 300px;
+    height: auto;
+    margin-left: 40px;
+    margin-top: 2px;
+    
+}
+
+.text{
+    background: #9600ff;
+    border-radius: 30px;
+    display: flex;
+    margin-top: 5px;
+    flex-direction: column;
+    width: 1000px;
+    text-align: center;
+    padding: 20px 5%;
+    margin-right: 40px;
+    align-items: center;
+    box-shadow: 
+    0 0px 50px
+   #ffe926;
+}
+
+
+h1{
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+    position: relative;
+   
+}
+span{
+    color: #ffe926;
+}
+
+p{
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    position: inherit;
+}
+
+
+}
+
+/*Estilo para celular*/
+
+@media (max-width:599px){
+    
+    /*CABEÇALHO*/
+    .menu{
+        display: none;
+    }
+
+    /*Quadrado*/
+    .Ada{
+        width: 200px;
+        height: 200px;
+        margin-right: 15px;
+    }
+    .text{
+        width: 330px ;
+        height:auto; 
+        margin-top: 15%;
+        margin-left: 50px;
+        padding: 20px 5%;
+    }
+
+ 
+ 
+
+}
+

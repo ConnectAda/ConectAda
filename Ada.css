@@ -1,0 +1,245 @@
+
+body{
+    background-color: #ffe926;
+
+}
+
+h1{
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+span{
+    color: #9600ff;
+}
+
+/* Botão do menu lateral */
+.toggle-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ffe926;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 99999;
+   
+}
+
+/* Menu lateral (sidebar) */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 5px 0 8px #ffe92642;
+    transition: transform 0.3s;
+    transform: translateX(-100%);
+    z-index: 99998;
+}
+
+.sidebar.open {
+    transform: translateX(0);
+}
+
+/* Estilizando a lista do menu */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+    margin-top: 74px;
+}
+
+.sidebar ul li a {
+    color: #9600ff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1px 4%;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #ffe926;
+    
+}
+
+.overlay-menu{
+    background-color: #000000ce;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+    
+}
+
+.sidebar.open ~ .overlay-menu{
+    display: block;
+}
+
+/*Card Sobre história Ada Lovelace*/
+
+.imagens{
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.conteudo{
+    background-color: black;
+    border-radius: 30px;
+    box-shadow: 
+    0 0 100px
+    #000;
+    width: 60%;
+    height: 40%;
+    padding: 4% 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+   
+}
+
+h2{
+    color: #9600ff;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #ffe926;
+}
+
+p{
+    color: #fff;
+    text-align: justify;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+@media (min-width: 600px) and (max-width: 1023px){
+    
+    .sidebar ul li a {
+        color: #9600ff;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 5px;
+        display: block;
+        transition: background-color 0.3s;
+        font-size: 30px;
+    }
+    
+    .sidebar ul li {
+        margin-bottom: 20px;
+        margin-top: 85px;
+    }
+
+    h1{
+        margin-top: 10%;
+        font-size: 50px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+    }
+
+    .imagens{
+        width: 60%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+    
+    .conteudo{
+        background-color: black;
+        border-radius: 30px;
+        box-shadow: 
+        0 0 100px
+        #000;
+        width: 90%;
+        height: 40%;
+        padding: 4% 30px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
+       
+    }
+    h2{
+        color: #9600ff;
+        text-align: center;
+        font-size: 25px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: #ffe926;
+    }
+    
+    p{
+        color: #fff;
+        text-align: justify;
+        font-family: 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width:599px){
+
+    h1{
+        margin-top: 30%;
+        font-size: 30px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+    }
+
+    .imagens{
+        width: 60%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+    
+    .conteudo{
+        background-color: black;
+        border-radius: 30px;
+        box-shadow: 
+        0 0 100px
+        #000;
+        width: 80%;
+        height: 40%;
+        padding: 4% 30px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
+       
+    }
+    h2{
+        color: #9600ff;
+        text-align: center;
+        font-size: 18px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: #ffe926;
+    }
+    
+    p{
+        color: #fff;
+        text-align: justify;
+        font-family: 'Arial Narrow', Arial, sans-serif;
+        font-size: 12px;
+    }
+
+}
